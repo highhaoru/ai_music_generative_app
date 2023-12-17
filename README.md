@@ -15,8 +15,6 @@ Before diving into the code, let's make sure you're all set up:
 ### Setting Up Flask
 
 Installing Flask is a breeze! Just fire up your terminal and run:
-
-```bash
 pip install flask
 
 ### Open the Web
