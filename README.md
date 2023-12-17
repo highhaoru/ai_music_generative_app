@@ -18,3 +18,10 @@ Installing Flask is a breeze! Just fire up your terminal and run:
 
 ```bash
 pip install flask
+
+### Open the Web
+1. cd to ./backend and copy the command:
+python app.py
+
+then follow the instruction to copy the link:
+http://127.0.0.1:5000 on your browser
