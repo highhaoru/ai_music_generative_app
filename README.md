@@ -17,6 +17,16 @@ Before diving into the code, let's make sure you're all set up:
 Installing Flask is a breeze! Just fire up your terminal and run:
 pip install flask
 
+### Music Orientation
+Colab Link:
+https://colab.research.google.com/drive/1rs5QoeYHR6qRQuzGayqOmSQhXmOPbvED?usp=sharing
+
+Model Link:
+https://www.kaggle.com/code/karnikakapoor/music-generation-lstm/input
+
+Sample Data Link:
+http://www.piano-midi.de/
+
 ### Open the Web
 1. cd to ./backend and copy the command:
 python app.py
