@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Music Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        audio {
+            margin-top: 20px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Classical Music Player</h1>
+
+    <button onclick="playMusic('mozart')">Play Mozart</button>
+    <button onclick="playMusic('brahms')">Play Brahms</button>
+    <button onclick="playMusic('beethoven')">Play Beethoven</button>
+    <button onclick="playMusic('schumann')">Play Schumann</button>
+    <button onclick="playMusic('tschai')">Play Tschaikovsky</button>
+
+    <audio id="audioPlayer" controls>
+      Your browser does not support the audio element.
+    </audio>
+
+    <script>
+      function playMusic(composer) {
+        var audioPlayer = document.getElementById('audioPlayer')
+        audioPlayer.src = '/get_music/' + composer
+        audioPlayer.load()
+        audioPlayer.play()
+      }
+    </script>
+</body>
+</html>
